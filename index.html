@@ -1,70 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
 
     <script defer>
-        function toggleMenu() {
-            const menu = document.getElementById("mobile-menu");
-            menu.classList.toggle("hidden");
-        }
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
     </script>
-</head>
-<body>
-   <!-- Navbar -->
-    <header class=" shadow-md py-4">
-        <div class="container mx-auto flex items-center justify-between px-6">
-            <!-- Logo -->
-            <div class="flex items-center">
-                <img src="img/logo.png" alt="Logo" >
-                
-            </div>
-            
-            <!-- Desktop Navbar Links -->
-            <nav class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-700 hover:text-red-500 font-semibold transition duration-200 ease-in-out">Home</a>
-                <a href="#" class="text-red-500 hover:text-red-800 font-semibold transition duration-200 ease-in-out">About Us</a>
-                <a href="#" class="text-gray-700 hover:text-red-500 font-semibold transition duration-200 ease-in-out">Upskill</a>
-                <a href="#" class="text-gray-700 hover:text-red-500 font-semibold transition duration-200 ease-in-out">Contact Us</a>
-            </nav>
- 
-            <div>
-            <!-- Register Button (Hidden on Mobile) -->
-            <a href="#" class="hidden md:inline-block bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transform hover:scale-105 transition-transform duration-300 ease-in-out">Register Interest</a>
-             <button class="ml-4 md:h-11 md:w-11   rounded-lg p-2  transform hover:scale-105 transition-transform duration-300 ease-in-out">
-             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-11  ">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-              </svg>
-             </button> 
-            </div>
-     
-            <!-- Mobile Menu Button -->
-            <button onclick="toggleMenu()" class="md:hidden text-gray-700 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+    
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="shadow-md py-4">
+      <div class="container mx-auto flex items-center justify-between px-6">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="img/logo.png" alt="Logo" />
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden transform  transition-transform duration-300 ease-in-out ">
-            <nav class="flex flex-col items-center space-y-4 py-4">
-                <a href="#" class="text-gray-700 hover:text-red-500 font-semibold">Home</a>
-                <a href="#" class="text-red-500 hover:text-red-800 font-semibold">About Us</a>
-                <a href="#" class="text-gray-700 hover:text-red-500 font-semibold">Upskill</a>
-                <a href="#" class="text-gray-700 hover:text-red-500 font-semibold">Contact Us</a>
-                <a href="#" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transform hover:scale-105 transition-transform duration-300 ease-in-out">Register Interest</a>
-            </nav>
+        <!-- Desktop Navbar Links -->
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#"
+            class="text-gray-700 hover:text-red-500 font-semibold transition duration-200 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-red-500 hover:text-red-800 font-semibold transition duration-200 ease-in-out"
+            >About Us</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-red-500 font-semibold transition duration-200 ease-in-out"
+            >Upskill</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-red-500 font-semibold transition duration-200 ease-in-out"
+            >Contact Us</a
+          >
+        </nav>
+
+        <div>
+          <!-- Register Button (Hidden on Mobile) -->
+          <a
+            href="#"
+            class="hidden md:inline-block bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transform hover:scale-105 transition-transform duration-300 ease-in-out"
+            >Register Interest</a
+          >
+          <button
+            class="ml-4 md:h-11 md:w-11 rounded-lg p-2 transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-11"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
+          </button>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          onclick="toggleMenu()"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden transform transition-transform duration-300 ease-in-out"
+      >
+        <nav class="flex flex-col items-center space-y-4 py-4">
+          <a href="#" class="text-gray-700 hover:text-red-500 font-semibold"
+            >Home</a
+          >
+          <a href="#" class="text-red-500 hover:text-red-800 font-semibold"
+            >About Us</a
+          >
+          <a href="#" class="text-gray-700 hover:text-red-500 font-semibold"
+            >Upskill</a
+          >
+          <a href="#" class="text-gray-700 hover:text-red-500 font-semibold"
+            >Contact Us</a
+          >
+          <a
+            href="#"
+            class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transform hover:scale-105 transition-transform duration-300 ease-in-out"
+            >Register Interest</a
+          >
+        </nav>
+      </div>
     </header>
 
+    
+     <!-- Responsive Banner Section -->
+    <section class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center banner justify-center text-white curved-bottom" style="background-image: url('img/Untitled_design__2_-removebg-preview.png');">
+        <div class="text-center px-10 md:px-20 max-w-5xl mb-40">
+            <!-- First Paragraph with Styled Hyphens -->
+            <p class="text-sm md:text-base font-medium uppercase mb-5 tracking-wide ">
+                Discover <span class="text-red-500">-</span> Interact <span class="text-red-500">-</span> Engage
+            </p>
+            
+            <!-- Heading Text -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-10 leading-tight md:leading-relaxed">
+                Connecting <span class="text-red-500 underline"> talent</span> to  opportunity through <span class="text-red-500 underline ">skills</span>
+            </h1>
+            
+            <!-- Description Text -->
+            <p class="text-base md:text-lg lg:text-xl mb-8">
+                We foster a skill-focused environment enabling students to navigate their career with <br> their self-paced learning journey and businesses to gain market-ready talent.
+            </p>
+            
+            <!-- Button -->
+            <a href="#" class="bg-white text-red-500 py-3 px-8 rounded-full font-bold text-sm md:text-base hover:bg-red-600 hover:text-black transition-transform transform hover:scale-350 duration-200 ease-in-out">Ask questions</a>
+        </div>
+    </section>
 
-   
 
-</body>
+  </body>
 </html>
-
-

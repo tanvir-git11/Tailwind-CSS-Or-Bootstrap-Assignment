@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.divider-background {
+    background-image: url('img/Line and circle content.png'); /* Replace with your divider image path */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+@media (max-width: 768px) {
+    .divider-background {
+    background-image: none; /* ছোট স্ক্রিনে ব্যাকগ্রাউন্ড ইমেজ হাইড */
+}}
+    
